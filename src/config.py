@@ -31,7 +31,6 @@ TOKEN_IDX = {
 # 'O' -> No punctuation
 punctuation_dict = {'O': 0, 'COMMA': 1, 'PERIOD': 2, 'QUESTION': 3}
 
-
 # pretrained model name: (model class, model tokenizer, output dimension, token style)
 MODELS = {
     'bert-base-uncased': (BertModel, BertTokenizer, 768, 'bert'),
@@ -49,4 +48,6 @@ MODELS = {
     'albert-base-v1': (AlbertModel, AlbertTokenizer, 768, 'albert'),
     'albert-base-v2': (AlbertModel, AlbertTokenizer, 768, 'albert'),
     'albert-large-v2': (AlbertModel, AlbertTokenizer, 1024, 'albert'),
+
+    'mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es': (DistilBertModel, DistilBertTokenizer, 768, 'bert'),
 }

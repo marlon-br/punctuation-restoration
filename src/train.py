@@ -44,6 +44,12 @@ if args.language == 'english':
     test_set_asr = Dataset(os.path.join(args.data_path, 'en/test2011asr'), tokenizer=tokenizer, sequence_len=sequence_len,
                            token_style=token_style, is_train=False)
     test_set = [val_set, test_set_ref, test_set_asr]
+elif args.language == 'spa':
+    train_set = Dataset(os.path.join(args.data_path, 'es/train.txt'), tokenizer=tokenizer, sequence_len=sequence_len,
+                        token_style=token_style, is_train=True, augment_rate=ar, augment_type=aug_type)
+    val_set = Dataset(os.path.join(args.data_path, 'es/test.txt'), tokenizer=tokenizer, sequence_len=sequence_len,
+                      token_style=token_style, is_train=False)
+    test_set = [val_set]
 elif args.language == 'bangla':
     train_set = Dataset(os.path.join(args.data_path, 'bn/train'), tokenizer=tokenizer, sequence_len=sequence_len,
                         token_style=token_style, is_train=True, augment_rate=ar, augment_type=aug_type)
