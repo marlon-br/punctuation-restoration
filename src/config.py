@@ -49,5 +49,5 @@ MODELS = {
     'albert-base-v2': (AlbertModel, AlbertTokenizer, 768, 'albert'),
     'albert-large-v2': (AlbertModel, AlbertTokenizer, 1024, 'albert'),
 
-    'xlm-roberta-large-finetuned-conll02-spanish': (RobertaModel, RobertaTokenizer, 1024, 'roberta'),
+    'xlm-roberta-large-finetuned-conll02-spanish': (XLMRobertaModel, XLMRobertaTokenizer, 1024, 'roberta'),
 }
