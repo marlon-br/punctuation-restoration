@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/data/es/test.txt
+/.idea/vcs.xml
+/data/es/train.txt
+/out/punctuation-restore_logs.txt
+/.idea/punctuation-restoration.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
