@@ -49,5 +49,5 @@ MODELS = {
     'albert-base-v2': (AlbertModel, AlbertTokenizer, 768, 'albert'),
     'albert-large-v2': (AlbertModel, AlbertTokenizer, 1024, 'albert'),
 
-    'mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es': (DistilBertModel, DistilBertTokenizer, 768, 'bert'),
+    'xlm-roberta-large-finetuned-conll02-spanish': (RobertaModel, RobertaTokenizer, 1024, 'roberta'),
 }
